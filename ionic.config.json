@@ -1,6 +1,6 @@
 {
   "name": "wabamonto",
-  "app_id": "",
+  "app_id": "653076aa",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}

@@ -10,5 +10,9 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
+  doLogin()
+  {
+    this.navCtrl.setRoot('MenuPage');
+  }
 
 }
