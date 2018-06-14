@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController, Refresher } from 'ionic-angular';
 
 /**
  * Generated class for the DiscussionPage page.
@@ -15,11 +15,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class DiscussionPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public toastCtrl : ToastController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DiscussionPage');
   }
 
+  doRefresh(refresher: Refresher) 
+  {
+      setTimeout(() => {
+        refresher.complete();
+
+        const toast = this.toastCtrl.create({
+          message: 'Sessions have been updated.',
+          duration: 3000
+        });
+        toast.present();
+      }, 1000);
+  }
 }

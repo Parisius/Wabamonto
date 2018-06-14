@@ -12,7 +12,6 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -45,7 +44,7 @@ font-size: 26px; } }
 @include makeIcon(road, '\e9b1');
 @include makeIcon(plus, '\ea0a');
 @include makeIcon(mail2, '\ea84');
-@include makeIcon(menu, 'e9bd');
+@include makeIcon(menu, '\e9bd');
 @include makeIcon(radio-unchecked, '\ea56');
 
 /*.icon-automobile:before {

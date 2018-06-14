@@ -1,10 +1,11 @@
 // http://ionicframework.com/docs/theming/
+@import "../theme/icons";
 
 
 // App Global Sass
-// --------------------------------------------------
 // Put style rules here that you want to apply globally. These
 // styles are for the entire app and not just one component.
+// --------------------------------------------------
 // Additionally, this file can be also used as an entry point
 // to import other Sass files to be included in the output CSS.
 //
@@ -14,3 +15,44 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+@font-face
+{
+    font-family: Dosis;
+    src: url(../assets/fonts/dosis.woff2);
+    font-weight: normal;
+    font-size: medium
+}
+
+
+*{
+    font-family: Dosis,
+} 
+
+.proposer{ 
+    border: 1px solid #b3b3b3;
+    margin-top : 20px;
+    margin-bottom: 0px;
+    border-radius : 4px;
+    height : 55px;
+    line-height: 55px;
+    font-size: 24px;
+    
+}
+/* .centered {
+    width: 80%;
+    margin: 30px;
+}  */
+
+ion-grid {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+

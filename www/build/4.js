@@ -1,14 +1,14 @@
 webpackJsonp([4],{
 
-/***/ 270:
+/***/ 286:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TestPageModule", function() { return TestPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SignupPageModule", function() { return SignupPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__discussion__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__signup__ = __webpack_require__(309);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,33 +18,33 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var TestPageModule = /** @class */ (function () {
-    function TestPageModule() {
+var SignupPageModule = /** @class */ (function () {
+    function SignupPageModule() {
     }
-    TestPageModule = __decorate([
+    SignupPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__discussion__["a" /* DiscussionPage */],
+                __WEBPACK_IMPORTED_MODULE_2__signup__["a" /* SignupPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__discussion__["a" /* DiscussionPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__signup__["a" /* SignupPage */]),
             ],
         })
-    ], TestPageModule);
-    return TestPageModule;
+    ], SignupPageModule);
+    return SignupPageModule;
 }());
 
-//# sourceMappingURL=discussion.module.js.map
+//# sourceMappingURL=signup.module.js.map
 
 /***/ }),
 
-/***/ 276:
+/***/ 309:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DiscussionPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignupPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(99);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -57,29 +57,32 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the DiscussionPage page.
+ * Generated class for the SignupPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var DiscussionPage = /** @class */ (function () {
-    function DiscussionPage(navCtrl, navParams) {
+var SignupPage = /** @class */ (function () {
+    function SignupPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    DiscussionPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad DiscussionPage');
+    SignupPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad SignupPage');
     };
-    DiscussionPage = __decorate([
+    SignupPage.prototype.goToLogin = function () {
+        this.navCtrl.setRoot('HomePage');
+    };
+    SignupPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-discussion',template:/*ion-inline-start:"C:\Users\LAFRICAINE\Desktop\app_640\Wabamonto New\wabamonto\src\pages\discussion\discussion.html"*/'<!--\n  Generated template for the DiscussionPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header cler>\n\n    <ion-navbar no-border-bottom>\n        <ion-buttons >\n            <button ion-button icon-only menuToggle>\n                <ion-icon name="menu" ></ion-icon>\n            </button>\n        </ion-buttons>\n      <ion-buttons end>\n          <button ion-button icon-only>\n            <ion-icon name="search" color="dark"></ion-icon>\n          </button>\n      </ion-buttons>\n</ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\LAFRICAINE\Desktop\app_640\Wabamonto New\wabamonto\src\pages\discussion\discussion.html"*/,
+            selector: 'page-signup',template:/*ion-inline-start:"C:\Users\LAFRICAINE\Desktop\app_640\Wabamonto New\wabamonto\src\pages\signup\signup.html"*/'<ion-content padding style="background:url(assets/imgs/back.png) no-repeat center;background-size:cover;background-color:#019996;" id="page5">\n	<ion-grid>\n    <ion-row>\n      <ion-col text-center>\n  \n  \n  <div class="spacer" style="width:300px;height:114px;" id="login-spacer5"></div>\n	<h2 id="register-heading1" style="color:#FFFFFF;font-weight:400;text-align:center;">\n	  Inscription\n	</h2>\n	<form id="register-form1">\n	  <ion-list id="register-list2">\n		<ion-item class="proposer">\n		  <ion-input type="email" placeholder="Adresse mail" name="mail"></ion-input>\n		</ion-item>\n		\n		<ion-item class="proposer">\n		  <ion-label></ion-label>\n		  <ion-input type="tel" placeholder="Numéro de téléphone" name="phonenum"></ion-input>\n		</ion-item>\n		\n		<ion-item class="proposer">\n		  <ion-label></ion-label>\n		  <ion-input type="password" placeholder="Password" name="password"></ion-input>\n		</ion-item>\n		\n		<ion-item class="proposer">\n		  <ion-label></ion-label>\n		  <ion-input type="text" placeholder="Confirmation du mot de passe" name="passconfirm"></ion-input>\n		</ion-item>\n	  </ion-list>\n	  \n	  <button id="register-button1" ion-button color="CTA" large block style="font-size:18px;border-radius:5px 5px 5px 5px;"  (click)="goToLogin()">\n		S\'inscrire\n	  </button>\n	  <div id="register-markdown1" class="show-list-numbers-and-dots">\n		<p style="color:#FFFFFF;" align="center">\n		  En vous inscrivant vous acceptez nos <b> condition d&#39;utilisation </b>et notre <b>politique de confidentialité</b>\n		</p>\n	  </div>\n	  <button id="register-button2" ion-button clear color="light" block style="color:#FFFFFF;" (click)="goToLogin()">\n		Déja membre? Connectez vous!\n	  </button>\n	</form>\n\n  </ion-col >\n</ion-row>\n</ion-grid>\n  </ion-content>'/*ion-inline-end:"C:\Users\LAFRICAINE\Desktop\app_640\Wabamonto New\wabamonto\src\pages\signup\signup.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-    ], DiscussionPage);
-    return DiscussionPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    ], SignupPage);
+    return SignupPage;
 }());
 
-//# sourceMappingURL=discussion.js.map
+//# sourceMappingURL=signup.js.map
 
 /***/ })
 

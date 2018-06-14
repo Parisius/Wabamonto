@@ -1,0 +1,57 @@
+
+<ion-header cler>
+
+  <ion-navbar no-border-bottom>
+      <ion-buttons >
+          <button ion-button icon-only (click)="goBack()">
+              <ion-icon name="undo2" ></ion-icon>
+          </button>
+      </ion-buttons>
+    
+</ion-navbar>
+
+</ion-header>
+
+<ion-content  padding style="background-color:#ffffff;">
+<br><br><br>
+<ion-grid>
+    <ion-row>
+      <ion-col text-center>
+  <div>
+  
+    <form  (ngSubmit)="searchTrajet()" margin-top novalidate class="centered">
+    <ion-list>
+      <ion-item class="proposer">
+        <ion-label></ion-label>
+        <ion-input type="text" placeholder="Lieu de départ" nngControlame="departure" no-lines></ion-input>
+      </ion-item>
+      
+      <ion-item class="proposer">
+        <ion-label></ion-label>
+        <ion-input type="text" placeholder="Lieu de destination" ngControl="arrival"></ion-input>
+      </ion-item>
+      
+      <ion-item class="proposer">
+        <ion-label>
+          Date et Heure
+        </ion-label>
+        <ion-datetime displayFormat="DD/MM/YYYY" ngControl="date" ></ion-datetime>
+       
+      </ion-item>
+    
+    </ion-list>
+
+    <button  type="submit" ion-button  outline color="CTA" block large style="color:#f67300; font-size:18px;border-radius:5px 5px 5px 5px;">
+      Rechercher un trajet
+    </button>
+    
+    </form>
+<!-- -->
+    
+  </div>
+</ion-col >
+</ion-row>
+</ion-grid>
+
+</ion-content>
+ <!-- <ion-input type="date" placeholder="Date de Naissance" name="date"></ion-input> [disabled]="!trajetForm.valid" -->

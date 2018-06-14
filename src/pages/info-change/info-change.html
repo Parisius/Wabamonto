@@ -1,0 +1,81 @@
+<ion-header cler>
+    <ion-navbar no-border-bottom>
+        <ion-buttons >
+            <button ion-button icon-only (click)="goBack()">
+                <ion-icon name="undo2"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding  >
+    <ion-grid>
+        <ion-row>
+            <ion-col text-center>
+                <div  style="text-align:left; font-size:16px;" >
+                                    <p style="color:#000000;">
+                                    Changer d'adresse mail
+                                    </p>
+                </div>
+                
+                <form >
+                    <ion-list>
+                    <ion-item class="proposer">
+                    <ion-label></ion-label>
+                    <ion-input type="text" placeholder="Adresse mail" name="mail"></ion-input>
+                    </ion-item>
+                    </ion-list>
+
+                </form>
+
+                <div  style="text-align:left; font-size:16px;" >
+                                        <p style="color:#000000;">
+                                        Changer de numéro de téléphone
+                                        </p>
+                </div>
+                    
+                <form>
+                    <div class="spacer" style="height:10;" id="information-spacer13"></div>
+                    <ion-list>
+                        <ion-item class="proposer">
+                        <ion-label></ion-label>
+                        <ion-input type="text" placeholder="Numéro de téléphone" name="imma"></ion-input>
+                        </ion-item>
+                    </ion-list>
+                </form>
+
+                <div  style="text-align:left; font-size:16px;" >
+                                        <p style="color:#000000;">
+                                        Changer de mot de passe
+                                        </p>
+                </div>
+                    
+                <form>
+                    <div class="spacer" style="height:10;" id="information-spacer13"></div>
+                    <ion-list>
+                        <ion-item class="proposer">
+                            <ion-label></ion-label>
+                            <ion-input type="text" placeholder="Mot de passe actuel" name="pass"></ion-input>
+                        </ion-item>
+
+                        <ion-item class="proposer">
+                            <ion-label></ion-label>
+                            <ion-input type="text" placeholder="Nouveau mot de passe " name="npass"></ion-input>
+                        </ion-item>
+
+                        <ion-item class="proposer">
+                            <ion-label></ion-label>
+                            <ion-input type="text" placeholder="Confirmer mot de passe " name="cpass"></ion-input>
+                        </ion-item>
+
+                    </ion-list>
+                    <button id="trajet-button16" style="font-size:18px;border-radius:5px 5px 5px 5px;"  large ion-button color="CTA" block >
+                    Changer mot de passe
+                    </button>
+                </form>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

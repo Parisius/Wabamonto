@@ -1,0 +1,94 @@
+
+<ion-header cler>
+
+    <ion-navbar no-border-bottom>
+        <ion-buttons >
+            <button ion-button icon-only (click)="goBack()">
+                <ion-icon name="undo2"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding  >
+    <ion-grid>
+        <ion-row>
+            <ion-col text-center>
+
+                <img src="assets/imgs/head.png" style="display:block;width:50;height:40;margin-left:auto;margin-right:auto;" />
+                <div  style="text-align:center;">
+                    <p style="color:#000000;">
+                    Choisissez une photo de profil
+                    </p>
+                </div>
+                
+                <form id="information-form4">
+                    <ion-list>
+                        <ion-item class="proposer">
+                            <ion-input type="text" placeholder="Prénom" name="prenom"></ion-input>
+                        </ion-item>
+                        
+                        <div class="spacer" style="height:10;" id="information-spacer13"></div>
+                        <ion-item class="proposer">
+                            <ion-label></ion-label>
+                            <ion-input type="text" placeholder="Nom" name="nom"></ion-input>
+                        </ion-item>
+                        
+                        <div class="spacer" style="height:10;" id="information-spacer14"></div>
+                        <ion-item class="proposer">
+                            <ion-label>
+                                Date de naissance
+                            </ion-label>
+                            <ion-datetime displayFormat="DD/MM/YYYY" ></ion-datetime>
+                            <!-- <ion-input type="date" placeholder="Date de Naissance" name="date"></ion-input> -->
+                        </ion-item>
+                        
+                        <div class="spacer" style="height:10;" id="information-spacer15"></div>
+                        <ion-item class="proposer">
+                            <ion-label>
+                                Choisissez votre sexe
+                            </ion-label>
+                            <ion-select name="sex">
+                                <ion-option></ion-option>
+                                <ion-option>
+                                Femme
+                                </ion-option>
+                                <ion-option>
+                                Homme
+                                </ion-option>
+                                <ion-option>
+                                Autre
+                                </ion-option>
+                            </ion-select>
+                        </ion-item>
+
+                        <ion-item class="proposer">
+                            <ion-label></ion-label>
+                            <ion-input type="text" placeholder="Ville" name="town"></ion-input>
+                        </ion-item>
+                    
+                        <div class="spacer" style="height:10;" id="information-spacer13"></div>
+                        <ion-item class="proposer">
+                            <ion-label></ion-label>
+                            <ion-input type="text" placeholder="Profession" name="job"></ion-input>
+                        </ion-item>
+                        
+                        <div class="spacer" style="height:10;" id="information-spacer14"></div>
+                        <ion-item class="proposer" >
+                            <ion-label></ion-label>
+                            <ion-input type="text" placeholder="Parlez un peu de vous" name="aboutYou" height="50"></ion-input>
+                        </ion-item>
+                        
+                        <div class="spacer" style="height:10;" id="information-spacer15"></div>
+                    </ion-list>
+                    <button id="information-button8" ion-button  outline color="CTA" block large style="color:#f67300; font-size:18px;border-radius:5px 5px 5px 5px;" >
+                    Continuer
+                    </button>
+                </form>
+
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

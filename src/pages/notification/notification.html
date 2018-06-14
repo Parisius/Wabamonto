@@ -21,8 +21,14 @@
 
 </ion-header>
 
-
-
-<ion-content padding>
-
+<ion-content padding id="page4" style="background-color:#B3B3B3;">
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+      </ion-refresher>
+  <div class="spacer" style="height:215px;" id="message-spacer25"></div>
+  <div ion-col text-center>
+    <p style="color:#000000;font-size:16px;">
+      Aucune notification pour l&#39;instant
+    </p>
+  </div>
 </ion-content>

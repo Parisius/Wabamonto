@@ -3,7 +3,7 @@
 
 // Font path is used to include ionicons,
 // roboto, and noto sans fonts
-$font-path: "../assets/fonts";
+$font-path: "../assets/fonts" !default;
 
 
 // The app direction is used to include
@@ -84,13 +84,16 @@ $toolbar-md-background:                   color($colors, cler);
 // The premium icon font for Ionic. For more info, please see:
 // http://ionicframework.com/docs/ionicons/
 
-@import "ionic.ionicons";
+//@import "ionic.ionicons";
+$text-input-md-show-focus-highlight: false !default;
+$text-input-md-show-valid-highlight: $text-input-md-show-focus-highlight !default;
+$text-input-md-show-invalid-highlight: $text-input-md-show-focus-highlight !default;
 
-
+$button-md-text-transform: none;
 // Fonts
 // --------------------------------------------------
-$font-family-md-base: "Dosis";
+/* $font-family-md-base: "Dosis";
 $font-family-ios-base: "Dosis";
-$font-family-wp-base: "Dosis";
+$font-family-wp-base: "Dosis"; */
 /* @import "roboto";
 @import "noto-sans"; */

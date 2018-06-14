@@ -1,0 +1,49 @@
+<ion-content padding style="background:url(assets/imgs/back.png) no-repeat center;background-size:cover;background-color:#019996;" id="page5">
+	<ion-grid>
+    <ion-row>
+      <ion-col text-center>
+  
+  
+  <div class="spacer" style="width:300px;height:114px;" id="login-spacer5"></div>
+	<h2 id="register-heading1" style="color:#FFFFFF;font-weight:400;text-align:center;">
+	  Inscription
+	</h2>
+	<form id="register-form1">
+	  <ion-list id="register-list2">
+		<ion-item class="proposer">
+		  <ion-input type="email" placeholder="Adresse mail" name="mail"></ion-input>
+		</ion-item>
+		
+		<ion-item class="proposer">
+		  <ion-label></ion-label>
+		  <ion-input type="tel" placeholder="Numéro de téléphone" name="phonenum"></ion-input>
+		</ion-item>
+		
+		<ion-item class="proposer">
+		  <ion-label></ion-label>
+		  <ion-input type="password" placeholder="Password" name="password"></ion-input>
+		</ion-item>
+		
+		<ion-item class="proposer">
+		  <ion-label></ion-label>
+		  <ion-input type="text" placeholder="Confirmation du mot de passe" name="passconfirm"></ion-input>
+		</ion-item>
+	  </ion-list>
+	  
+	  <button id="register-button1" ion-button color="CTA" large block style="font-size:18px;border-radius:5px 5px 5px 5px;"  (click)="goToLogin()">
+		S'inscrire
+	  </button>
+	  <div id="register-markdown1" class="show-list-numbers-and-dots">
+		<p style="color:#FFFFFF;" align="center">
+		  En vous inscrivant vous acceptez nos <b> condition d&#39;utilisation </b>et notre <b>politique de confidentialité</b>
+		</p>
+	  </div>
+	  <button id="register-button2" ion-button clear color="light" block style="color:#FFFFFF;" (click)="goToLogin()">
+		Déja membre? Connectez vous!
+	  </button>
+	</form>
+
+  </ion-col >
+</ion-row>
+</ion-grid>
+  </ion-content>

@@ -1,4 +1,4 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar>
     <ion-title>
       Ionic Blank
@@ -10,4 +10,68 @@
     <button  ion-button full style="color:rgb(25, 21, 245);" (click)="doLogin()">
         Login
     </button>
+    <ion-item>Ionic Icons:</ion-item>
+    <ion-icon name="ionic"></ion-icon>
+    <ion-icon name="star"></ion-icon>
+    <ion-icon name="radio-unchecked"></ion-icon>
+  
+    <ion-item>Font-Awesome Icons:</ion-item>
+    <ion-icon name="road"></ion-icon>
+    <ion-icon name="briefcase"></ion-icon>
+    <ion-icon name="search"></ion-icon>
+    <ion-icon name="automobile"></ion-icon>
+    <ion-icon name="bell"></ion-icon>
+    <ion-icon name="coin-dollar"></ion-icon>
+    <ion-icon name="key2"></ion-icon>
+    <ion-icon name="mail2"></ion-icon>
+    <ion-icon name="plus"></ion-icon>
+    <ion-icon name="undo2"></ion-icon>
+    <ion-icon name="user"></ion-icon>
+    <ion-icon name="menu"></ion-icon>
+
+    <div text-capitalize>
+        text-capitalize
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
+      </div>
+</ion-content>
+ -->
+<ion-content padding style="background:url(assets/imgs/back.png) no-repeat center;background-size:cover;background-color:#019996;" id="page6">
+	 <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+  
+  <div class="spacer" style="width:300px;height:114px;" id="login-spacer5"></div>
+	<h2 id="login-heading2" style="color:#FFFFFF;font-weight:400;text-align:center;font-size:32px;">
+	  Connexion
+	</h2>
+	<div class="spacer" style="height:15;" id="login-spacer6"></div>
+
+	<form id="login-form2">
+	  <ion-list id="login-list3">
+		<ion-item class="proposer">
+		  <ion-label></ion-label>
+		  <ion-input type="email" placeholder="Adresse mail" name="mail"></ion-input>
+		</ion-item>
+		<br>
+	  	<ion-item class="proposer">
+			<ion-label></ion-label>
+			<ion-input type="password" placeholder="Password" name="password"></ion-input>
+	  	</ion-item>
+	</ion-list>
+	<br>
+	  <button id="login-button3" ion-button color="CTA" large block style="font-size:18px;border-radius:5px 5px 5px 5px;"  (click)="doLogin()">
+		Se connecter
+	  </button>
+		
+	  <button id="login-button4" ion-button clear color="light" block style="color:#FFFFFF;" (click)="goToRegister()">
+		Ou créer un compte
+	  </button>
+	  <div class="spacer" style="height:5;" id="login-spacer7"></div>
+	  <button id="login-button5" ion-button clear color="light" block style="color:#FFFFFF;" (click)="goToForgotten()">
+		Mot de passe oublié?
+	  </button>
+	</form>
+  </ion-col >
+</ion-row>
+</ion-grid>
 </ion-content>

@@ -12,6 +12,12 @@
                 <ion-icon name="menu" ></ion-icon>
             </button>
         </ion-buttons>
+        <ion-buttons end>
+            <button ion-button icon-only >
+              <ion-icon name="radio-unchecked" color="primary"></ion-icon>
+            </button>
+        </ion-buttons>
+      
       <ion-buttons end>
           <button ion-button icon-only>
             <ion-icon name="search" color="dark"></ion-icon>
@@ -21,8 +27,40 @@
 
 </ion-header>
 
-
-
-<ion-content padding>
-
-</ion-content>
+<ion-content padding  style="background-color:#019996;">
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+    
+    <br><br><br><br><br><br>
+    <ion-grid>
+        <ion-row>
+          <ion-col text-center>
+    <div>
+      <h4 id="trajet-heading4" style="color:#FFFFFF;font-weight:300;text-align:center;">Vous n'avez encore aucun trajet de prévu</h4>
+      <br>
+      <button id="trajet-button16" style="font-size:18px;border-radius:5px 5px 5px 5px;"  large ion-button color="CTA" block (click)="goToProposerT()">
+        Proposer un trajet
+      </button>
+      <div class="spacer" style="height:10px;" id="trajet-spacer31"></div>
+      <button id="trajet-button17" large ion-button color="cler"  style="color:#F67300;font-size:18px;border-radius:5px 5px 5px 5px;" block (click)="goToSearchT()">
+        Rechercher un trajet
+      </button>
+    </div>
+  </ion-col >
+</ion-row>
+</ion-grid>
+    <ion-fab bottom right #fab>
+      <button ion-fab color="cler" outline style=" border: 1px solid #F67300">
+        <ion-icon name="plus" color="CTA" (click)="goToProposerT()" ></ion-icon>
+      </button>
+      <!-- <ion-fab-list side="top">
+        <button ion-fab color="vimeo" (click)="openSocial('Vimeo', fab)"><ion-icon name="logo-vimeo"></ion-icon></button>
+        <button ion-fab color="google" (click)="openSocial('Google+', fab)"><ion-icon name="logo-googleplus"></ion-icon></button>
+        <button ion-fab color="twitter" (click)="openSocial('Twitter', fab)"><ion-icon name="logo-twitter"></ion-icon></button>
+        <button ion-fab color="facebook" (click)="openSocial('Facebook', fab)"><ion-icon name="logo-facebook"></ion-icon></button>
+      </ion-fab-list> -->
+    </ion-fab>
+  
+  
+  </ion-content>
