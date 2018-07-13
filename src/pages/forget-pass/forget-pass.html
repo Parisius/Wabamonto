@@ -13,12 +13,16 @@
     </p>
   </div>
   <div class="spacer" style="height:15;" id="forgotten-spacer11"></div>
-  <form id="forgotten-form3">
+  <p *ngIf="submitAttempt" style="color: #ffffff;">Veuillez remplir tout les champs.</p>
+  <form id="forgotten-form3" [formGroup]="forgetForm" >
     <ion-list id="forgotten-list4">
       <ion-item class="proposer" >
         <ion-label></ion-label>
-        <ion-input type="email" placeholder="Adresse mail" name="mail"></ion-input>
+        <ion-input type="email" placeholder="Adresse mail" formControlName="mail"></ion-input>
       </ion-item>
+      <ion-item *ngIf="!forgetForm.controls.mail.valid  &&  submitAttempt">
+        <p>Veuillez entrer une adresse mail valide.</p>
+    </ion-item>
     </ion-list>
     <div class="spacer" style="height:10;" id="forgotten-spacer12"></div>
     <button id="forgotten-button6" large ion-button color="CTA" block style="font-weight:500; font-size:18px;border-radius:5px 5px 5px 5px;" (click)="goToLogin()">

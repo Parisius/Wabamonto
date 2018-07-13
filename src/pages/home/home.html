@@ -45,17 +45,20 @@
 	  Connexion
 	</h2>
 	<div class="spacer" style="height:15;" id="login-spacer6"></div>
-
-	<form id="login-form2">
+  <p *ngIf="submitAttempt" style="color: #ffffff;">Veuillez remplir tout les champs.</p>
+	<form id="login-form2" [formGroup]="loginForm">
 	  <ion-list id="login-list3">
 		<ion-item class="proposer">
 		  <ion-label></ion-label>
-		  <ion-input type="email" placeholder="Adresse mail" name="mail"></ion-input>
-		</ion-item>
+		  <ion-input type="email" placeholder="Adresse mail" formControlName="mail" ></ion-input>
+    </ion-item>
+    <ion-item *ngIf="!loginForm.controls.mail.valid  &&  submitAttempt">
+      <p>Veuillez entrer une adresse mail valide.</p>
+  </ion-item>
 		<br>
 	  	<ion-item class="proposer">
 			<ion-label></ion-label>
-			<ion-input type="password" placeholder="Password" name="password"></ion-input>
+			<ion-input type="password" placeholder="Password" formControlName="password"></ion-input>
 	  	</ion-item>
 	</ion-list>
 	<br>

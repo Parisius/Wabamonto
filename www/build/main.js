@@ -50,15 +50,15 @@ var map = {
 		16
 	],
 	"../pages/home/home.module": [
-		278,
+		276,
 		15
 	],
 	"../pages/info-change/info-change.module": [
-		276,
+		277,
 		14
 	],
 	"../pages/informations/informations.module": [
-		277,
+		278,
 		13
 	],
 	"../pages/menu/menu.module": [
@@ -82,36 +82,36 @@ var map = {
 		8
 	],
 	"../pages/rechercher-t/rechercher-t.module": [
-		285,
+		284,
 		7
 	],
 	"../pages/reservation/reservation.module": [
-		284,
+		285,
 		6
 	],
 	"../pages/searcht/searcht.module": [
-		287,
+		286,
 		5
 	],
 	"../pages/signup/signup.module": [
-		286,
-		4
+		287,
+		0
 	],
 	"../pages/tabs-p/tabs-p.module": [
 		288,
-		3
+		4
 	],
 	"../pages/tabs/tabs.module": [
 		289,
-		2
+		3
 	],
 	"../pages/trajet/trajet.module": [
 		290,
-		1
+		2
 	],
 	"../pages/whatsup/whatsup.module": [
 		291,
-		0
+		1
 	]
 };
 function webpackAsyncContext(req) {
@@ -206,18 +206,18 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/car-add/car-add.module#CarAddPageModule', name: 'CarAddPage', segment: 'car-add', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/discussion/discussion.module#TestPageModule', name: 'DiscussionPage', segment: 'discussion', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/forget-pass/forget-pass.module#ForgetPassPageModule', name: 'ForgetPassPage', segment: 'forget-pass', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/info-change/info-change.module#InfoChangePageModule', name: 'InfoChangePage', segment: 'info-change', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/informations/informations.module#InformationsPageModule', name: 'InformationsPage', segment: 'informations', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/menu/menu.module#TestPageModule', name: 'MenuPage', segment: 'menu', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/message/message.module#MessagePageModule', name: 'MessagePage', segment: 'message', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/notification/notification.module#TestPageModule', name: 'NotificationPage', segment: 'notification', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/proposer-t/proposer-t.module#ProposerTPageModule', name: 'ProposerTPage', segment: 'proposer-t', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/proposertr/proposertr.module#ProposertrPageModule', name: 'ProposertrPage', segment: 'proposertr', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/reservation/reservation.module#TestPageModule', name: 'ReservationPage', segment: 'reservation', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/rechercher-t/rechercher-t.module#RechercherTPageModule', name: 'RechercherTPage', segment: 'rechercher-t', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/reservation/reservation.module#TestPageModule', name: 'ReservationPage', segment: 'reservation', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/searcht/searcht.module#SearchtPageModule', name: 'SearchtPage', segment: 'searcht', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/tabs-p/tabs-p.module#TabsPPageModule', name: 'TabsPPage', segment: 'tabs-p', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/tabs/tabs.module#TestPageModule', name: 'TabsPage', segment: 'tabs', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/trajet/trajet.module#TestPageModule', name: 'TrajetPage', segment: 'trajet', priority: 'low', defaultHistory: [] },
